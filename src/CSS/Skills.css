@@ -1,0 +1,74 @@
+.skills-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0d1117; /* Dark Theme */
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #00aaff;
+  }
+  
+  /* Skill Categories */
+  .skill-category {
+    margin-bottom: 40px;
+  }
+  
+  .skill-category h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00aaff;
+    text-transform: uppercase;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Skill Items */
+  .skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* Skill Card Styling */
+  .skill-card {
+    background: #161b22;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    min-width: 120px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .skill-card:hover {
+    background: #00aaff;
+    transform: scale(1.1);
+    color: white;
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
