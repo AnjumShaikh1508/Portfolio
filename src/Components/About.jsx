@@ -1,25 +1,41 @@
 import React from 'react';
-import '../CSS/About.css';
+import '../styles/About.css';
 
 const About = () => {
   return (
-    <div className="about-container">
-      <h1 className="about-heading">About Me</h1>
-      <div className="about-image">
-        <img src="https://imarticus.org/blog/wp-content/uploads/2021/12/djbwgfw.gif" alt="Animated GIF" />
-      </div>
+    <section id="about" className="about">
+      <h2>About Me</h2>
       <div className="about-content">
-        <p className="about-description">
-          A dedicated full-stack web developer skilled in HTML, CSS, JavaScript, React.js, Express.js, and Node.js. 
-          Completed an intensive 1000+ hour web development and Generative AI/Prompt Engineering program at Masai School, 
-          gaining hands-on experience through both individual and team projects. Passionate about creating efficient web 
-          solutions and eager to contribute technical expertise while embracing new challenges in this evolving field.
+        <p>
+          I'm a skilled full-stack web developer proficient in HTML, CSS, JavaScript, Express.js, and Node.js. 
+          I've completed a comprehensive 1000+ hour web development and Generative AI/Prompt Engineering 
+          course at Masai School with hands-on experience in individual and collaborative projects.
         </p>
-        <h2 className="about-name">Anjum Rahiman Shaikh</h2>
-        <p className="about-contact">8767923819</p>
-        <p className="about-contact">anjumshaikh0310@gmail.com</p>
+        <p>
+          I'm seeking an opportunity to apply my skills and knowledge while continuing to learn 
+          and grow in this dynamic field.
+        </p>
+        
+        <div className="contact-info">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <strong>Name:</strong> Anjum Rahiman Shaikh
+            </li>
+            <li>
+              <strong>Phone:</strong> +91-8767923819
+            </li>
+            <li>
+              <strong>Email:</strong> anjumshaikh0310@gmail.com
+            </li>
+            <li className="social-links">
+              <a href="https://www.linkedin.com/in/anjum-shaikh1508/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+              <a href="https://github.com/AnjumShaikh1508" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

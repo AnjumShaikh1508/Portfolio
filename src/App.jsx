@@ -1,28 +1,25 @@
-import { Routes,  Route } from 'react-router-dom'
-import './App.css'
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-import About from './Components/About'
-import Skills from './Components/Skills'
-import Projects from './Components/Projects'
-import Github from './Components/Github'
-import Contact from './Components/Contact'
-import Resume from './Components/Resume'
+import React from 'react';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './App.css';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Navbar />
+    <div className="App">
+      <Navigation />
       <Home />
       <About />
+      <Projects />
       <Skills />
-      <Projects/>
-      <Github/>
-      <Contact/>
-      <Resume />
-    </>
-  )
-}
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;
